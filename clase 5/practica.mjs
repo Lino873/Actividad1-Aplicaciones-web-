@@ -32,3 +32,11 @@ const prodctosconinteres = productos.map((producto) =>{
 
 })
 console.log(prodctosconinteres)
+
+function cb(){
+    const n = 1   
+    cb(n)
+}
+x((n)=> {
+console.log('se ejecuto el CB con el valor pasado por x'+ n)
+})
