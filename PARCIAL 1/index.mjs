@@ -1,13 +1,10 @@
 import express from 'express'
+import rutasV1 from './rutas.mjs'
 
-const Puerto = 3000
+const PUERTO = 3000
 
 const app = express()
 
-app.get('/', (req,res)=>{
+app.listen(PUERTO)
 
-})
-
-app.get('/', (req,res)=>{
-    
-})
+app.use(rutasV1)
