@@ -1,5 +1,5 @@
 /// Crear la imagen
-cd
+docker build -t imagen_pg
 
 /// Instanciar un contenedor a partir de la imagen
 docker run --name contenedor_pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=pass -e POSTGRES_DB=tienda -p 5432:5432 -d imagen_pg
